@@ -9,6 +9,9 @@
 /nginx/ssl/*.key
 /nginx/ssl/*.csr
 
+/www/*
+!/www/localhost
+
 .env
 
 .DS_Store
