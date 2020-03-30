@@ -1,0 +1,14 @@
+.idea
+.project
+/log
+/mysql
+
+/conf/nginx/conf.d/*
+!/conf/nginx/conf.d/localhost.conf
+/nginx/ssl/*.crt
+/nginx/ssl/*.key
+/nginx/ssl/*.csr
+
+.env
+
+.DS_Store

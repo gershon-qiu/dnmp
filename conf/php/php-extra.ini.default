@@ -1,0 +1,35 @@
+[Error]
+error_reporting = E_ALL & ~E_NOTICE
+; 是否显示在客户端，这里默认为off
+display_errors = On
+; 打开记录日志
+log_errors = On
+log_errors_max_len = 1024
+
+[upload]
+file_uploads = On
+upload_tmp_dir = "/tmp"
+upload_max_filesize = 50M
+post_max_size = 100M
+max_execution_time = 600
+max_input_time = 600
+memory_limit = 128M
+; 提示：需要保持 memory_limit > post_max_size > upload_max_filesize
+
+[opcache]
+opcache.enable=1
+opcache.memory_consumption=128
+opcache.interned_strings_buffer=8
+opcache.max_accelerated_files=4000
+opcache.revalidate_freq=10
+opcache.fast_shutdown=1
+opcache.enable_cli=1
+
+[xdebug]
+xdebug.remote_enable = On
+xdebug.remote_handler = dbgp
+xdebug.remote_host = host.docker.internal
+xdebug.remote_connect_back=off
+xdebug.remote_autostart=off
+xdebug.remote_port = 9001
+xdebug.idekey = PHPSTORM

@@ -1,0 +1,20 @@
+[www]
+# user = www-data
+# group = www-data
+# listen = 127.0.0.1:9000
+# listen.owner = www-data
+# listen.group = www-data
+# listen.mode = 0660
+[pm]
+# pm = dynamic
+# pm.start_servers = 2
+# Note: Used only when pm is set to 'dynamic'
+# Default Value: min_spare_servers + (max_spare_servers - min_spare_servers) / 2
+# pm.start_servers = 2
+# pm.min_spare_servers = 1
+# pm.max_spare_servers = 3
+# pm.max_children = 5
+# pm.max_requests = 500
+[slowlog]
+# request_slowlog_timeout = 0
+# slowlog = /var/log/php/slow.log
